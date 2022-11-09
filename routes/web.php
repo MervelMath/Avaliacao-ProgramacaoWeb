@@ -22,3 +22,6 @@ Route::resource('tipoproduto',  "App\Http\Controllers\TipoProdutoController");
 Route::resource('produto',  "App\Http\Controllers\ProdutoController");
 
 Route::resource('userinfo',  "App\Http\Controllers\UserInfoController");
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
