@@ -18,8 +18,4 @@ class Authenticate extends Middleware
             return route('login');
         }
     }
-
-    protected function unauthenticated($request, \Illuminate\Auth\AuthenticationException $exception) {
-        return redirect()->route("login");
-    }
 }
